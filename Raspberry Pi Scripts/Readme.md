@@ -6,3 +6,4 @@
 <br />
 <br />
 **Database Upgradation and Encryption Folders**: These folders contain python scripts that encrypt the preprocessed data and stores the real-time data into the local database (MySQL)
+<img src="https://github.com/SyedWaliAbbas/Edge-Energy-Management-System/blob/main/Raspberry%20Pi%20Scripts/Programming_Architecture.jpg"  valign="middle" alt="Scapy" />
