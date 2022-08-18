@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<title>BYCO POWER HOUSE ORC2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+body,h2 {font-family: sans-serif; 
+}
+body, html {height: 100%;width:100%}
+.bgimg {
+  background-image: url('black.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#box1{
+
+border: 4px solid blue ;
+-webkit-animation: mymove 15s infinite; /* Chrome, Safari, Opera */
+ animation: mymove 15s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {border-color: red;}
+  to {border-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {border-color: red;}
+  to {border-color: blue;}
+}
+
+#gen{
+
+width:60px;
+height:20%;
+padding: 5px 5px;}
+
+#busbar{
+height:18.5%;
+margin-left:1%;
+margin-right:2%;
+width:177%;
+padding:0 0 0 0;
+position:absolute;
+top:20% ;
+left:0 ;}
+
+#breaker{
+margin-top:8%;
+width:60px;
+height:70px;
+padding-left:12px;}
+
+
+
+#cable1{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:0.5% ;
+
+}
+#cable2{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:6.5% ;
+
+}
+#cable3{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:13.5% ;
+
+}
+#cable4{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:20% ;
+
+}
+#cable5{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:26.5% ;
+
+}
+#cable6{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:33% ;
+
+}
+#cable7{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:39.5% ;
+
+}
+#cable8{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:46% ;
+
+}
+#cable9{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:52.5% ;
+
+}
+#cable10{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:59% ;
+
+}
+#cable11{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:66.5% ;
+
+}
+#cable12{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:72% ;
+
+}
+#cable13{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:78.5% ;
+
+}
+#cable14{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:85% ;
+
+}
+#cable15{
+width:70px;
+height:11%;
+position:absolute;
+top:30.2%;
+left:91.5% ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#breaker1{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:0.5% ;
+margin-left:5px;
+
+}
+#breaker2{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:6.5% ;
+
+}
+#breaker3{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:13.5% ;
+
+}
+#breaker4{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:20% ;
+
+}
+#breaker5{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:26.5% ;
+
+}
+#breaker6{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:33% ;
+
+}
+#breaker7{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:39.5% ;
+
+}
+#breaker8{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:46% ;
+
+}
+#breaker9{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:52.5% ;
+
+}
+#breaker10{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:60% ;
+
+}
+#breaker11{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:66.5% ;
+
+}
+#breaker12{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:72% ;
+
+}
+#breaker13{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:78.5% ;
+
+}
+#breaker14{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:85% ;
+
+}
+#breaker15{
+width:50px;
+height:10%;
+position:absolute;
+top:40%;
+left:91.5% ;
+
+}
+
+
+
+
+
+
+
+
+#c1{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:0.5% ;
+
+
+}
+#c2{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:6.5% ;
+
+}
+#c3{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:13.5% ;
+
+}
+#c4{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:20% ;
+
+}
+#c5{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:26.5% ;
+
+}
+#c6{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:33% ;
+
+}
+#c7{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:39.5% ;
+
+}
+#c8{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:46% ;
+
+}
+#c9{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:52.5% ;
+
+}
+#c10{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:59% ;
+
+}
+#c11{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:66.5% ;
+
+}
+#c12{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:72% ;
+
+}
+#c13{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:78.5% ;
+
+}
+#c14{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:85% ;
+
+}
+#c15{
+width:70px;
+height:11%;
+position:absolute;
+top:50%;
+left:91.5% ;
+}
+
+
+#g1a{
+width:6.1%;
+height:75px;
+position:absolute;
+top:56.5%;
+left:0.5% ;
+
+}
+
+#g2{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:6.5% ;
+
+}
+#g3{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:13.5% ;
+
+}
+#g4{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:20% ;
+
+}
+#g5{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:26.5% ;
+
+}
+#g6{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:33% ;
+
+}
+#g7{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:39.5% ;
+
+}
+#g8{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:46% ;
+
+}
+#g9{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:52.5% ;
+
+}
+#g10{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:59% ;
+
+}
+#g11{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:65.5% ;
+
+}
+#g12{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:72% ;
+
+}
+#g13{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:78.5% ;
+
+}
+#g14{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:85% ;
+
+}
+#g15{
+width:6.1%;
+height:75px;
+margin-left:10px;
+position:absolute;
+top:56.5%;
+left:91.5% ;
+
+}
+
+
+#boxx{
+position:absolute;
+top:99.9%;
+width:100%;
+background-image:url('black.png');}
+
+
+
+
+
+#g2:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g3:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g4:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g5:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g6:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g7:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g8:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g9:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g10:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g11:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g12:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g13:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g14:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g15:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+#g1a:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;
+position:absolute;
+top:60%;
+margin-top:50%;
+  padding: 15px;
+  border: 1px solid red;
+}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+</style>
+
+</style>
+
+
+
+
+
+
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    
+	Byco Petroleum Pakistan Limited
+  </div>
+ <!-- Navbar -->
+<div class="w3-top">
+<br><br>
+	<div class="w3-bar w3-black w3-card"> 
+	<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <button onclick="location.href='scada.html' " style="width:auto" class= "w3-bar-item,w3-button,w3-padding-large,w3-hide-small">HOME </button>
+    <button onclick ="location.href='index1.html'"  style="width:auto" class="w3-bar-item,w3-button,w3-padding-large,w3-hide-small"> LOGOUT</button>
+	</div>
+
+
+	
+	
+	
+	
+</div>
+  
+  
+ <ul id="box1" style="position:absolute;top:18%;height:40%;width:100%;padding:0 0 0 0;display:inline;margin-top:6%;" > 
+ <div style="border: 0px solid blue;width:20%;position:absolute;top:1%;left:1%;padding:1 1 1 1;font-weight:bold;text-align:center"> </div>
+ <div style="border: 0px solid blue;width:20%;position:absolute;top:9.5%;left:1%;padding:1 1 1 1;font-weight:bold;text-align:center;font-size:150%;">Bus Parameters </div>
+ <div style="border: 0px solid blue;width:20%;position:absolute;top:18%;left:1%;padding:1 1 1 1;font-weight:bold;text-align:center"> </div>
+ 
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:1%;left:22%;padding:1 1 1 1;font-weight:bold;text-align:center">VL1-N: </div>
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:9.5%;left:22%;padding:1 1 1 1;font-weight:bold;text-align:center">VL2-N: </div>
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:18%;left:22%;padding:1 1 1 1;font-weight:bold;text-align:center">VL3-N: </div>
+ 
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:1%;left:30%;padding:1 1 1 1;font-weight:bold;text-align:center;color:green;">240.1 Volts </div>
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:9.5%;left:30%;padding:1 1 1 1;font-weight:bold;text-align:center;color:green;">240.1 Volts </div>
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:18%;left:30%;padding:1 1 1 1;font-weight:bold;text-align:center;color:green;">240.1 Volts </div>
+ 
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:1%;left:40%;padding:1 1 1 1;font-weight:bold;text-align:center">VL1-L2: </div>
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:9.5%;left:40%;padding:1 1 1 1;font-weight:bold;text-align:center">VL2-L3: </div>
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:18%;left:40%;padding:1 1 1 1;font-weight:bold;text-align:center">VL3-L1: </div>
+ 
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:1%;left:48%;padding:1 1 1 1;font-weight:bold;text-align:center;color:green;">400.1 Volts </div>
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:9.5%;left:48%;padding:1 1 1 1;font-weight:bold;text-align:center;color:green;">400.1 Volts </div>
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:18%;left:48%;padding:1 1 1 1;font-weight:bold;text-align:center;color:green;">400.5 Volts </div>
+ 
+
+<div style="border: 0px solid blue;width:10%;position:absolute;top:5.5%;left:60%;padding:1 1 1 1;font-weight:bold;text-align:left">Bus kW </div>
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:12%;left:60%;padding:1 1 1 1;font-weight:bold;text-align:left">Bus kVAr </div>
+ 
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:5.5%;left:68%;padding:1 1 1 1;font-weight:bold;text-align:left;color:green;">400.1 KW </div>
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:12%;left:68%;padding:1 1 1 1;font-weight:bold;text-align:left;color:green;">400.5 kVAr </div>
+ 
+ <div style="border: 0px solid blue;width:10%;position:absolute;top:9%;left:80%;padding:1 1 1 1;font-weight:bold;text-align:left">Power Factor </div>
+
+ <div style="border: 0px solid blue;width:9%;position:absolute;top:9%;left:90%;padding:1 1 1 1;font-weight:bold;text-align:left;color:green;">0.76 lag </div>
+ 
+
+ 
+ 
+ 
+<img id="busbar" src="busbar.png"  width="100%">
+<img id="cable1" src="c1.png"  width="10px">
+<img id="cable2" src="c1.png"  width="10px">
+<img id="cable3" src="c1.png"  width="10px">
+<img id="cable4" src="c1.png"  width="10px">
+<img id="cable5" src="c1.png"  width="10px">
+<img id="cable6" src="c1.png"  width="10px">
+<img id="cable7" src="c1.png"  width="10px">
+<img id="cable8" src="c1.png"  width="10px">
+<img id="cable9" src="c1.png"  width="10px">
+<img id="cable10" src="c1.png"  width="10px">
+<img id="cable11" src="c1.png"  width="10px">
+<img id="cable12" src="c1.png"  width="10px">
+<img id="cable13" src="c1.png"  width="10px">
+<img id="cable14" src="c1.png"  width="10px">
+<img id="cable15" src="c1.png"  width="10px">
+<img id="breaker1" src="b.png"  width="100%">
+
+
+<img id="breaker2" src="b.png"  width="10px">
+<img id="breaker3" src="b.png"  width="10px">
+<img id="breaker4" src="b.png"  width="100%">
+<img id="breaker5" src="b.png"  width="100%">
+<img id="breaker6" src="b.png"  width="100%">
+<img id="breaker7" src="b.png"  width="100%">
+<img id="breaker8" src="b.png"  width="100%">
+<img id="breaker9" src="b.png"  width="100%">
+<img id="breaker10" src="b.png"  width="100%">
+<img id="breaker11" src="b.png"  width="100%">
+<img id="breaker12" src="b.png"  width="100%">
+<img id="breaker13" src="b.png"  width="100%">
+<img id="breaker14" src="b.png"  width="100%">
+<img id="breaker15" src="b.png"  width="100%">
+
+<img id="c1" src="c1.png"  width="10px">
+<img id="c2" src="c1.png"  width="10px">
+<img id="c3" src="c1.png"  width="10px">
+<img id="c4" src="c1.png"  width="10px">
+<img id="c5" src="c1.png"  width="10px">
+<img id="c6" src="c1.png"  width="10px">
+<img id="c7" src="c1.png"  width="10px">
+<img id="c8" src="c1.png"  width="10px">
+<img id="c9" src="c1.png"  width="10px">
+<img id="c10" src="c1.png"  width="10px">
+<img id="c11" src="c1.png"  width="10px">
+<img id="c12" src="c1.png"  width="10px">
+<img id="c13" src="c1.png"  width="10px">
+<img id="c14" src="c1.png"  width="10px">
+<img id="c15" src="c1.png"  width="10px">
+
+
+
+
+<img id="g1a"  src="g1.png"  width="60px">
+<img id="g2"  src="g1.png"  width="60px">
+ <img id="g3"  src="g1.png"  width="60px">
+  <img id="g4"  src="g2.png"  width="60px"> 
+ <img id="g5"  src="g2.png"  width="60px">
+  <img id="g6"  src="g2.png"  width="60px"> 
+ <img id="g7"  src="g3.png"  width="60px">
+  <img id="g8"  src="g3.png"  width="60px"> 
+ <img id="g9"  src="g3.png"  width="60px">
+  <img id="g10"  src="g3.png"  width="60px"> 
+ <img id="g11"  src="g1.png"  width="60px">
+  <img id="g12"  src="g4.png"  width="60px"> 
+ <img id="g13"  src="g1.png"  width="60px">
+  <img id="g14"  src="g1.png"  width="60px"> 
+ <img id="g15"  src="g2.png"  width="60px">
+ 
+ <div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:1%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;";>GEN01</div>
+ <div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:8%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN02</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:15%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN03</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:21.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN04</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:28.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN05</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:35%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN06</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:41.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN07</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:48%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN08</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:54.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN09</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:60.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN10</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:67%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN11</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:73.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN12</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:80.2%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN13</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:86.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN14</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:85%;left:93%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN15</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+    
+
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:1%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;";>GEN01</div>
+ <div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:8%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN02</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:15%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN03</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:21.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN04</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:28.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN05</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:35%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN06</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:41.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN07</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:48%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN08</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:54.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN09</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:60.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN10</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:67%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN11</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:73.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN12</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:80.2%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN13</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:86.5%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN14</div>
+<div style="border: 2px solid blue;width:5.5%;height100%;position:absolute;top:66.8%;left:93%;padding:1 1 1 1;background-color:gray;font-weight:bold;text-align:center;color:black;">GEN15</div>
+
+
+ 
+
+
+</div>
+
+</body>
+</html>
