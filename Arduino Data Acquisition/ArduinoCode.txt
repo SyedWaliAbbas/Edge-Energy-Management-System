@@ -1,0 +1,97 @@
+#include <stdint.h>       // needed for uint8_t
+int x=0;
+//unsigned int t[250];
+int n=1000;
+int V[1000];
+unsigned int I[1000];
+int ADCvall;
+uint8_t adctouse;
+byte b1,b2;
+
+int ADCsingleREAD(uint8_t adctouse)
+{
+    int ADCval;
+    ADCSRA &= ~(bit (ADPS0) | bit (ADPS1) | bit (ADPS2)); // clear prescaler bits
+    ADMUX = adctouse;         // use #1 ADC
+    ADMUX |= (1 << REFS0);    // use AVcc as the reference
+    ADMUX &= ~(1 << ADLAR);   // clear for 10 bit resolution
+    ADCSRA |= (1 << ADPS2) | (1 << ADPS1);
+ 
+    ADCSRA |= (1 << ADEN);    // Enable the ADC
+
+    ADCSRA |= (1 << ADSC);    // Start the ADC conversion
+
+    while(ADCSRA & (1 << ADSC));      // Thanks T, this line waits for the ADC to finish 
+
+
+    ADCval = ADCL;
+    ADCval = (ADCH << 8) + ADCval;    // ADCH is read so ADC can be updated again
+
+    return ADCval;
+}
+
+void setup(){
+Serial.begin(115200);
+ADCSRA |= bit (ADPS1) | bit (ADPS2);  //64 bits
+x=ADCsingleREAD(0);
+x=0;
+    delay(500);
+
+// 
+
+}
+  
+
+void loop()
+{
+    
+if(x==0)
+{if (Serial.available())
+{x=Serial.read()-'0';}}
+//Serial.print ("x");
+//Serial.println(x);
+
+if(x==5)
+{Serial.println("VA");
+x=0;}
+
+if(x==1)
+
+
+ {   for (int i=0;i<n;i++)
+    {     V[i] = ADCsingleREAD(0);
+          I[i] = ADCsingleREAD(1);
+          delayMicroseconds(4);
+     // ADCsingleREAD(0);
+     // ADCvalue now contains an 10bit ADC read
+    }
+
+
+   
+      for(int j=0;j<n;j++)
+   { b1 = (V[j]) & 0xFF;
+ b2 = ( V[j] >> 8 ) & 0xFF;
+ Serial.write(b1);
+ Serial.write(b2);
+ if(j >= (999)) {
+ 
+ Serial.write(0xFF);
+ Serial.write(0xFF);
+ }}
+
+  for(int j=0;j<n;j++)
+   { b1 = (I[j]) & 0xFF;
+ b2 = ( I[j] >> 8 ) & 0xFF;
+ Serial.write(b1);
+ Serial.write(b2);
+ if(j >= (999)) {
+ 
+ Serial.write(0xFF);
+ Serial.write(0xFF);
+ }}
+
+x=0;
+}
+
+
+}
