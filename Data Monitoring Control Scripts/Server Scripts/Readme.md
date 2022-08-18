@@ -1,0 +1,3 @@
+# Data Monitoring & Control Layer
+This layer utilizes LAMP (Linux Apache MySQL PHP) server to present the real-time information of tactical power network. First, it authenticates the user then fetches the information from local database (MySQL). This information is presented to the users using dynamic webpage. The information flow in this research project and different components used in each layer is also shown below:
+ <img src="https://github.com/SyedWaliAbbas/Edge-Energy-Management-System/blob/main/Data%20Monitoring%20Control%20Scripts/Server%20Scripts/Dataflow.jpg" valign="middle" alt="Scapy" />
