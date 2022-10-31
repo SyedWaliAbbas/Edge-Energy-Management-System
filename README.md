@@ -11,7 +11,8 @@ The development of an Edge Energy Management System requires
 1)	Arduino Mega 
 2)	Raspberry Pi
 3)	Data Acquisition Circuit
-Raspberry Pi is connected to the Arduino Mega via serial ports and Arduino is connected to the Data Acquisition Circuits via its Analog Input Pins. Details of the Data Acquisition Circuit used in the Edge Energy Management System are provided in the paper.
+
+Raspberry Pi is connected to the Arduino Mega via serial ports and Arduino is connected to the Data Acquisition Circuits via its Analog Input Pins. Details of the Data Acquisition Circuit used in the Edge Energy Management System are provided in the [paper](https://www.techrxiv.org/articles/preprint/Development_of_Open-Source_Edge_Energy_Management_System_for_Tactical_Power_Networks/20964400)
 
 ### Software Requirements:
 1)	Arduino Code is provided in the repository. In order to program Arduino Mega, the open-source Arduino IDE 2.0 will be required.
@@ -47,8 +48,4 @@ url={ https://www.techrxiv.org/articles/preprint/Development_of_Open-Source_Edge
 doi={ 10.36227/techrxiv.20964400.v1},
 publisher={TechRxiv}
 }
-
- 
- 
-  
- ```
+```
